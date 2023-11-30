@@ -1,3 +1,3 @@
 # 🧩 ComfyUI Guide To Making Custom_Nodes
 
-# got to the wiki
+# go to the wiki
