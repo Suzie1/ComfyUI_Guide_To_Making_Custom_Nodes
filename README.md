@@ -1,2 +1,3 @@
-# ComfyUI_Guide_To_Making_Custom_Nodes
-A guide to making custom nodes in ComfyUI
+# 🧩 ComfyUI Guide To Making Custom_Nodes
+
+# got to the wiki
