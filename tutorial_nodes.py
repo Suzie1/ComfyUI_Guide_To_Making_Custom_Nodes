@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-import os 
 from PIL import Image, ImageDraw, ImageFont
 
 def pil2tensor(image):
