@@ -24,10 +24,10 @@ class HelloWorld:
 
     RETURN_TYPES = ("IMAGE",)
     #RETURN_NAMES = ("IMAGE",)
-    FUNCTION = "write_text"
+    FUNCTION = "draw_text"
     CATEGORY = "Tutorial Nodes"
 
-    def write_text(self, image_width, image_height, text, 
+    def draw_text(self, image_width, image_height, text, 
                    font_size, font_color, background_color):
 
         # Create a new PIL image
@@ -45,7 +45,48 @@ class HelloWorld:
         draw.text((image_center_x, image_center_y), text, fill=font_color, font=font, anchor="mm")
         
         # Convert the PIL image to a torch tensor
-        image_out = pil2tensor(new_img),
+        image_out = pil2tensor(new_img)
         
-        return (image_out)
- 
+        return (image_out,)
+        
+class PrintHelloWorld:     
+
+    @classmethod
+    def INPUT_TYPES(cls):
+               
+        return {"required": {       
+                    "text": ("STRING", {"multiline": False, "default": "Hello World"}),
+                    }
+                }
+
+    RETURN_TYPES = ()
+    FUNCTION = "print_text"
+    OUTPUT_NODE = True
+    CATEGORY = "Tutorial Nodes"
+
+    def print_text(self, text):
+
+        print(f"Tutorial Text : {text}")
+        
+        return {}
+        
+class ConcatenateHelloWorld:     
+
+    @classmethod
+    def INPUT_TYPES(cls):
+               
+        return {"required": {       
+                    "text1": ("STRING", {"multiline": False, "default": "Hello"}),
+                    "text2": ("STRING", {"multiline": False, "default": "World"}),
+                    }
+                }
+
+    RETURN_TYPES = ("STRING",)
+    FUNCTION = "print_text"
+    CATEGORY = "Tutorial Nodes"
+
+    def print_text(self, text1, text2):
+
+        text_out = text1 + " " + text2
+        
+        return (text_out,)        
