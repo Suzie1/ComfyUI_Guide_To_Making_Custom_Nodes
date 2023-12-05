@@ -4,6 +4,6 @@
 
 This is a WIP guide.
 
-Some pages are nearing completion including the tutorial pages.
+Most pages are nearing completion including the tutorial pages.
 
 
