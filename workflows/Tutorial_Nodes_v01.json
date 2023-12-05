@@ -1,0 +1,183 @@
+{
+  "last_node_id": 17,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        620,
+        680
+      ],
+      "size": {
+        "0": 250,
+        "1": 260
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 15,
+      "type": "Hello World Overlay Text",
+      "pos": [
+        150,
+        680
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Hello World Overlay Text"
+      },
+      "widgets_values": [
+        512,
+        512,
+        "Hello World",
+        50,
+        "white",
+        "green"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "ShowText|pysssss",
+      "pos": [
+        620,
+        510
+      ],
+      "size": [
+        320,
+        80
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "Hello World"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Concatenate Hello World",
+      "pos": [
+        150,
+        510
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Concatenate Hello World"
+      },
+      "widgets_values": [
+        "Hello",
+        "World"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Print Hello World",
+      "pos": [
+        150,
+        370
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "properties": {
+        "Node name for S&R": "Print Hello World"
+      },
+      "widgets_values": [
+        "Hello World"
+      ]
+    }
+  ],
+  "links": [
+    [
+      7,
+      15,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      11,
+      0,
+      17,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
