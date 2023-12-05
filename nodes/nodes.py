@@ -18,7 +18,7 @@ class PrintHelloWorld:
     RETURN_TYPES = ()
     FUNCTION = "print_text"
     OUTPUT_NODE = True
-    CATEGORY = "Tutorial Nodes"
+    CATEGORY = "🧩 Tutorial Nodes"
 
     def print_text(self, text):
 
@@ -39,7 +39,7 @@ class ConcatenateHelloWorld:
 
     RETURN_TYPES = ("STRING",)
     FUNCTION = "concatenate_text"
-    CATEGORY = "Tutorial Nodes"
+    CATEGORY = "🧩 Tutorial Nodes"
 
     def concatenate_text(self, text1, text2):
 
@@ -65,7 +65,7 @@ class HelloWorldOverlayText:
     RETURN_TYPES = ("IMAGE",)
     #RETURN_NAMES = ("IMAGE",)
     FUNCTION = "draw_overlay_text"
-    CATEGORY = "Tutorial Nodes"
+    CATEGORY = "🧩 Tutorial Nodes"
 
     def draw_overlay_text(self, image_width, image_height, text, 
                    font_size, font_color, background_color):
