@@ -1,4 +1,4 @@
-import numpy as np
+ayTextimport numpy as np
 import torch
 from PIL import Image, ImageDraw, ImageFont
 
@@ -47,7 +47,7 @@ class ConcatenateHelloWorld:
         
         return (text_out,)        
  
-class HelloWorld:
+class HelloWorldOverlayText:
 
     @classmethod
     def INPUT_TYPES(cls):
