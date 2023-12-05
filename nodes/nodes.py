@@ -38,10 +38,10 @@ class ConcatenateHelloWorld:
                 }
 
     RETURN_TYPES = ("STRING",)
-    FUNCTION = "print_text"
+    FUNCTION = "concatenate_text"
     CATEGORY = "Tutorial Nodes"
 
-    def print_text(self, text1, text2):
+    def concatenate_text(self, text1, text2):
 
         text_out = text1 + " " + text2
         
@@ -64,10 +64,10 @@ class HelloWorldOverlayText:
 
     RETURN_TYPES = ("IMAGE",)
     #RETURN_NAMES = ("IMAGE",)
-    FUNCTION = "draw_text"
+    FUNCTION = "draw_overlay_text"
     CATEGORY = "Tutorial Nodes"
 
-    def draw_text(self, image_width, image_height, text, 
+    def draw_overlay_text(self, image_width, image_height, text, 
                    font_size, font_color, background_color):
                    
         # based on https://stackoverflow.com/questions/1970807/center-middle-align-text-with-pil
