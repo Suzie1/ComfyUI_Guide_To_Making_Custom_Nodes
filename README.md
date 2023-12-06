@@ -4,6 +4,11 @@
 
 This is a WIP guide.
 
-Most pages are nearing completion including the tutorial pages.
+The tutorial pages are in beta test, if you find any errors please let me know.
+
+There is a small node pack attached to this guide. This includes the init file and 3 nodes associated with the tutotials. You can install these using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) or by doing a git pull.
+
+Any feedback is welcomed. Just raise an issue with corrections or suggestions.
+
 
 
