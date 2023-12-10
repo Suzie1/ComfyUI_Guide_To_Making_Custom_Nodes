@@ -2,7 +2,7 @@
 
 ### [Contents Page](https://github.com/Suzie1/ComfyUI_Guide_To_Making_Custom_Nodes/wiki)
 
-This is a WIP guide.
+This is a WIP guide. It is about 80% complete. Five pages have not been completed yet.
 
 The tutorial pages are ready for beta test, if you find any errors please let me know.
 
